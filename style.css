@@ -1,0 +1,164 @@
+html {
+  text-align: center;  
+  font-size: 1vw;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) { 
+  html {
+    font-size: 1.2vw;
+  }
+}
+
+body {
+  background: linear-gradient(135deg, #0f0f0f, #2c2c2c);
+  color: #ffffff;
+  font-family: 'Press Start 2P', 'Roboto', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#stats {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+#stats div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+#stats i {
+  color: #00ff00;
+  font-size: 2rem;
+}
+
+#wins-count {
+  font-size: 1.5rem;
+}
+
+#losses-count {
+  font-size: 1.5rem;
+}
+
+#abortions-count {
+  font-size: 1.5rem;
+}
+
+svg {
+  height: 40vh;
+  max-height: 250px;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 400;
+  margin: 1.5rem 0;
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 400;
+  margin: 1rem;
+  color: #ffcc00;
+  text-shadow: 0 0 5px #ffcc00;
+}
+
+#keypad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+#keypad--row1, #keypad--row2, #keypad--row3 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem; 
+  margin-bottom: 0.5rem; 
+}
+
+#keypad a {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  background-color: #333333;
+  border: 2px solid #00ff00;
+  color: #ffffff;
+  border-radius: 5px;
+  text-shadow: 0 0 5px #00ff00;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#keypad a:hover {
+  box-shadow: 0 0 10px #00ff00;
+  background-color: #444444;
+}
+
+#guessing {
+  font-size: 3rem;
+  margin: 1.5rem auto;
+}
+
+#keypad .correct-letter {   
+  color: #00ff00;
+  cursor: default;
+}
+
+#keypad .incorrect-letter {
+  color: #ff0000;
+  cursor: default;
+}
+
+.hidden { 
+  display: none;
+}
+
+[status="escaped"] { 
+  color: #00ff00;
+}
+
+[status="hanged"] {  
+  color: #ff0000;
+}
+
+#new-game {
+  margin-top: 1rem;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+a:active {  
+  position: relative;
+  top: 2px;
+}
+
+#gallows-svg {
+  stroke: #ffffff;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
